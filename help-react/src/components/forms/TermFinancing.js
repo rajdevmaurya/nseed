@@ -8,22 +8,22 @@ const TermFinancing = ()=> {
 <div className="card border-0 mb-4">
   <div className="card-header">Term Financing</div>
   <div className="card-body">
-    <div className="form-group">
-    <button type="submit"> add </button>
+  <div className="form-group">
+    <label for="state">Hello Registartion</label>
     </div>
     <div className="form-group">
-      <input
-        type="text"
-        className="form-control"
-        placeholder="Enter Your Middle Name"
-      />
+         <button className="btn btn-primary mr-2"> add </button>
+         <button className="btn btn-primary mr-2"> save </button>
+         <button className="btn btn-primary mr-2"> cancel </button>
     </div>
+    
     <div className="form-group">
-      <input
-        type="text"
-        className="form-control"
-        placeholder="Enter Your Last Name"
-      />
+    <label for="state">Select</label>
+      <select class="form-control" id="state">
+       <option value="">Select Your State</option>
+       <option value="Maharastra">Maharastra</option>
+       <option value="Delhi">Delhi</option>
+     </select>
     </div>
   </div>
 </div>

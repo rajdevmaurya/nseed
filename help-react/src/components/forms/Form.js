@@ -7,28 +7,28 @@ import style from "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { useForm,handleSubmit } from "react-hook-form";
 const Form = ({ methods }) => {
-    // const { register, handleSubmit, watch, errors } = useForm();
+   
     const onSubmit = (data) => console.log(data);
   
     return (
       <form onSubmit={methods.handleSubmit(onSubmit)}>
          
+         
             <TermFinancing/>
-            
                 <Row>
-                    <Col>
-                        <BulletTerm />
-                    </Col>
+                   
                     <Col>
                         <LoanSummary />
+                    </Col>
+                    <Col>
+                        <BulletTerm />
                     </Col>
                     <Col>
                         <Pricing />
                     </Col>
                 </Row>
+                </form>
             
-            <button className="btn btn-primary">Create New Account</button>
-            </form>
        
     )
 };
